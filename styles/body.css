@@ -1,0 +1,25 @@
+.page-body {
+  position: relative;
+}
+
+.page-body img {
+  width: 100%;
+  height: auto;
+  z-index: -100;
+  overflow: hidden;
+}
+
+.page-body-text {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+}
+
+.page-body h1 {
+  color: var(----color-white);
+}
+
+.page-body div {
+  font-size: 20px;
+  color: var(--color-white);
+}

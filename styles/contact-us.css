@@ -1,0 +1,53 @@
+.contact-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.contact-us-text {
+  max-width: 30%;
+  margin-left: 15%;
+}
+
+.contact-us-form {
+  max-width: 30%;
+  margin-right: 15%;
+}
+
+.contact-us form {
+  display: grid;
+  grid-template-columns: 100%;
+  width: 100%;
+}
+
+.contact-us form [name='email']:in {
+  border-color: var(--color-red);
+}
+
+.contact-us form [name='email'],
+.contact-us form [name='message'],
+.contact-us form button {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border-radius: 10px;
+  margin: 5%;
+  padding: 2%;
+  border-width: 2px;
+  border-color: var(--color-black);
+  transition: 0.2s;
+}
+
+.contact-us form [name='email']:hover,
+.contact-us form [name='message']:hover,
+.contact-us form button:hover {
+  border-style: solid;
+  border-color: var(--color-strong-orange);
+  border-width: 2px;
+}
+
+.contact-us form [name='email']:focus,
+.contact-us form [name='message']:focus,
+.contact-us form button:active {
+  background-color: var(--color-light-orange);
+}

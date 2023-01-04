@@ -1,0 +1,32 @@
+.our-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+}
+
+.our-services .services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+}
+
+.our-services .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2%;
+}
+
+.our-services .container div {
+  text-align: center;
+  max-width: 50%;
+}
+
+.our-services img {
+  width: 15%;
+  height: auto;
+}
