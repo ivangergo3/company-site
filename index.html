@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>IG Consulting Services</title>
+    <!-- This base URL is necessary in live, so the routing works correctly -->
+    <base href="https://ivangergo3.github.io/company-site/" />
     <link rel="icon" href="./icons/ig-consulting-services-website-favicon-color.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,111 +21,115 @@
     <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="left-section">
-        <a href="/#top">
-          <img
-            src="./icons/ig-consulting-services-low-resolution-logo-color-on-transparent-background.png"
-            alt="Company logo"
-          />
-        </a>
-        <div>IG Consulting Services</div>
-      </div>
-      <div class="right-section">
-        <div class="web-menu">
-          <ul>
-            <li>
-              <a href="/#services">Services</a>
-            </li>
-            <li>
-              <a href="/#about_us">About</a>
-            </li>
-            <li>
-              <a href="/#contact_us">Contant Us</a>
-            </li>
-          </ul>
+    <input type="checkbox" id="checkbox" />
+    <div class="body">
+      <div class="header">
+        <div class="left-section">
+          <a href="/#top">
+            <img
+              src="./icons/ig-consulting-services-low-resolution-logo-color-on-transparent-background.png"
+              alt="Company logo"
+            />
+          </a>
+          <div>IG Consulting Services</div>
         </div>
-        <div class="mobile-menu">
-          <ul class="menu" id="menu">
-            <a class="close" href="#">
-              <span class="material-icons"> close </span>
+        <div class="right-section">
+          <div class="web-menu">
+            <ul>
+              <li>
+                <a href="/#services">Services</a>
+              </li>
+              <li>
+                <a href="/#about_us">About</a>
+              </li>
+              <li>
+                <a href="/#contact_us">Contant Us</a>
+              </li>
+            </ul>
+          </div>
+          <img class="moon" src="./icons/moon.svg" alt="moon" />
+          <img class="sun" src="./icons/sun.svg" alt="sun" />
+          <div class="mobile-menu">
+            <ul class="menu" id="menu">
+              <a class="close" href="#">
+                <span class="material-icons"> close </span>
+              </a>
+              <li><a href="/#services">Services</a></li>
+              <li><a href="/#about_us">About</a></li>
+              <li><a href="/#contact_us">Contact Us</a></li>
+            </ul>
+            <a class="hamburger" href="#menu">
+              <span class="material-icons"> menu </span>
             </a>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-          <a class="hamburger" href="#menu">
-            <span class="material-icons"> menu </span>
+          </div>
+        </div>
+      </div>
+      <div class="page-body" id="top">
+        <img src="./pictures/coding-g9f43800f5_1920.jpg" alt="background" />
+        <div class="page-body-text">
+          <h1>IG Consulting Services</h1>
+          <div>Whole website creation and maintenance</div>
+        </div>
+      </div>
+      <div class="our-services" id="services">
+        <h3>Our Services</h3>
+        <div class="services">
+          <div class="container">
+            <img src="./icons/icons8-brand-new-100-transparent.png" alt="Create new" />
+            <div>Create a brand new site, according to your requirements</div>
+          </div>
+          <div class="container">
+            <img src="./icons/icons8-add-new-100-transparent.png" alt="Add new" />
+            <div>Add new features to your existing site</div>
+          </div>
+          <div class="container">
+            <img src="./icons/icons8-write-64-transparent.png" alt="Rewrite" />
+            <div>Rewrite your site, with new technologies</div>
+          </div>
+          <div class="container">
+            <img src="./icons/icons8-wrench-100-transparent.png" alt="Maintain" />
+            <div>Maintain your site, update content</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-us" id="about_us">
+        <div>
+          <h3>About Us</h3>
+          We are a small starting company with experience in many field of development. Frontend,
+          backend, devops, testing. If you have any problems or questions feel free to rech out to
+          us and we are certain we can find the solution
+        </div>
+      </div>
+      <div class="contact-us" id="contact_us">
+        <div class="contact-us-text">
+          <h3>Contact Us</h3>
+          <div>
+            If you would like to get in touch with us, fill out the form and we will get back to you
+            as soon as we can.
+          </div>
+        </div>
+        <div class="contact-us-form">
+          <form
+            action="https://us-central1-own-html-site-backend.cloudfunctions.net/email"
+            method="POST"
+          >
+            <input type="email" name="email" placeholder="Your email address" />
+            <textarea name="message" rows="5" cols="80" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="image">
+          <a href="/#top">
+            <img
+              src="./icons/ig-consulting-services-low-resolution-logo-color-on-transparent-background.png"
+              alt="Company logo"
+            />
           </a>
         </div>
+        <div>Created by IG Consulting Services</div>
       </div>
-    </div>
-    <div class="page-body" id="top">
-      <img src="./pictures/coding-g9f43800f5_1920.jpg" alt="background" />
-      <div class="page-body-text">
-        <h1>IG Consulting Services</h1>
-        <div>Whole website creation and maintenance</div>
-      </div>
-    </div>
-    <div class="our-services" id="services">
-      <h3>Our Services</h3>
-      <div class="services">
-        <div class="container">
-          <img src="./icons/icons8-brand-new-100-transparent.png" alt="Create new" />
-          <div>Create a brand new site, according to your requirements</div>
-        </div>
-        <div class="container">
-          <img src="./icons/icons8-add-new-100-transparent.png" alt="Add new" />
-          <div>Add new features to your existing site</div>
-        </div>
-        <div class="container">
-          <img src="./icons/icons8-write-64-transparent.png" alt="Rewrite" />
-          <div>Rewrite your site, with new technologies</div>
-        </div>
-        <div class="container">
-          <img src="./icons/icons8-wrench-100-transparent.png" alt="Maintain" />
-          <div>Maintain your site, update content</div>
-        </div>
-      </div>
-    </div>
-    <div class="about-us" id="about_us">
-      <div>
-        <h3>About Us</h3>
-        We are a small starting company with experience in many field of development. Frontend,
-        backend, devops, testing. If you have any problems or questions feel free to rech out to us
-        and we are certain we can find the solution
-      </div>
-    </div>
-    <div class="contact-us" id="contact_us">
-      <div class="contact-us-text">
-        <h3>Contact Us</h3>
-        <div>
-          If you would like to get in touch with us, fill out the form and we will get back to you
-          as soon as we can.
-        </div>
-      </div>
-      <div class="contact-us-form">
-        <form
-          action="https://us-central1-own-html-site-backend.cloudfunctions.net/email"
-          method="POST"
-        >
-          <input type="email" name="email" placeholder="Your email address" />
-          <textarea name="message" rows="5" cols="80" placeholder="Your message"></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="image">
-        <a href="/#top">
-          <img
-            src="./icons/ig-consulting-services-low-resolution-logo-color-on-transparent-background.png"
-            alt="Company logo"
-          />
-        </a>
-      </div>
-      <div>Created by IG Consulting Services</div>
     </div>
   </body>
 </html>

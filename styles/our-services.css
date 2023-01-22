@@ -29,4 +29,5 @@
 .our-services img {
   width: 15%;
   height: auto;
+  filter: brightness(0) invert(80%);
 }
