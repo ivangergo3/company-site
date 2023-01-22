@@ -29,6 +29,7 @@ body {
   border-color: var(--color-black);
   transition: 0.2s;
   padding: 5%;
+  margin-top: 10%;
 }
 
 .root button:hover {

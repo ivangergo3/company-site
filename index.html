@@ -4,6 +4,8 @@
     <title>IG Consulting Services</title>
     <!-- This base URL is necessary in live, so the routing works correctly -->
     <base href="https://ivangergo3.github.io/company-site/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="icon" href="./icons/ig-consulting-services-website-favicon-color.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +27,7 @@
     <div class="body">
       <div class="header">
         <div class="left-section">
-          <a href="/#top">
+          <a href="#top">
             <img
               src="./icons/ig-consulting-services-low-resolution-logo-color-on-transparent-background.png"
               alt="Company logo"
@@ -37,13 +39,13 @@
           <div class="web-menu">
             <ul>
               <li>
-                <a href="/#services">Services</a>
+                <a href="#services">Services</a>
               </li>
               <li>
-                <a href="/#about_us">About</a>
+                <a href="#about_us">About</a>
               </li>
               <li>
-                <a href="/#contact_us">Contant Us</a>
+                <a href="#contact_us">Contant Us</a>
               </li>
             </ul>
           </div>
@@ -54,9 +56,9 @@
               <a class="close" href="#">
                 <span class="material-icons"> close </span>
               </a>
-              <li><a href="/#services">Services</a></li>
-              <li><a href="/#about_us">About</a></li>
-              <li><a href="/#contact_us">Contact Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about_us">About</a></li>
+              <li><a href="#contact_us">Contact Us</a></li>
             </ul>
             <a class="hamburger" href="#menu">
               <span class="material-icons"> menu </span>
@@ -113,6 +115,7 @@
             action="https://us-central1-own-html-site-backend.cloudfunctions.net/email"
             method="POST"
           >
+            <input type="hidden" name="repository" value="company-site" />
             <input type="email" name="email" placeholder="Your email address" />
             <textarea name="message" rows="5" cols="80" placeholder="Your message"></textarea>
             <button type="submit">Send</button>
@@ -121,7 +124,7 @@
       </div>
       <div class="footer">
         <div class="image">
-          <a href="/#top">
+          <a href="#top">
             <img
               src="./icons/ig-consulting-services-low-resolution-logo-color-on-transparent-background.png"
               alt="Company logo"

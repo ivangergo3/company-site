@@ -90,9 +90,9 @@ body {
 
 @media (max-width: 1100px) {
   :root {
-    --menu-text-size: 100px;
+    --menu-text-size: 50px;
     --bigger-text-size: 50px;
-    --default-font-size: 40px;
+    --default-font-size: 25px;
   }
   body {
     width: 100%;
