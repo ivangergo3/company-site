@@ -1,27 +1,8 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 20%;
   font-family: Roboto, Arial;
   font-size: var(--default-font-size);
   color: var(--color-black);
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-.body {
-  background-color: var(--color-white);
-}
-
-:root {
   --color-light-orange: rgb(254, 232, 214);
   --color-strong-orange: rgb(255, 117, 24);
   --color-menu: rgba(200, 200, 200, 0.15);
@@ -32,6 +13,21 @@ body {
   --menu-text-size: 25px;
   --bigger-text-size: 30px;
   --default-font-size: 25px;
+}
+
+body {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.body {
+  background-color: var(--color-white);
 }
 
 #checkbox {
@@ -85,17 +81,14 @@ body {
   --color-menu-mobile: rgba(200, 200, 200, 0.85);
   --color-white: rgb(50, 50, 50);
   --color-black: rgb(200, 200, 200);
-  --color-red: red;
+  --color-red: rgb(240, 0, 0);
 }
 
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
   :root {
     --menu-text-size: 50px;
     --bigger-text-size: 50px;
     --default-font-size: 25px;
-  }
-  body {
-    width: 100%;
   }
   #checkbox,
   .moon,
