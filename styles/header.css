@@ -15,7 +15,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 10%;
+  padding-left: 2%;
 }
 
 .left-section a {
@@ -101,14 +101,22 @@
   align-items: center;
 }
 
+.mobile-menu a {
+  text-decoration: none;
+}
+
 .hamburger {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10%;
   position: fixed;
   z-index: 99;
   background: none;
   color: var(--color-black);
   border: none;
   cursor: pointer;
-  transform: scale(5);
+  transform: scale(3);
 }
 
 .menu {
@@ -136,8 +144,8 @@
   color: black;
   cursor: pointer;
   top: 5%;
-  right: 15%;
-  transform: scale(5);
+  right: 20%;
+  transform: scale(3);
 }
 
 .menu:target {
@@ -168,15 +176,15 @@
     display: flex;
   }
 
-  .hamburger {
-    display: block;
-  }
-
   .left-section div {
-    padding-left: 0;
+    display: flex;
+    white-space: normal;
   }
 
   .right-section {
-    padding-right: 0;
+    padding: 0;
+    padding-left: 2%;
+    margin: 0;
+    justify-content: flex-start;
   }
 }

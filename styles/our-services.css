@@ -31,3 +31,18 @@
   height: auto;
   filter: brightness(0) invert(80%);
 }
+
+@media only screen and (max-width: 1000px) {
+  .our-services {
+    padding: 0;
+    margin-bottom: 15%;
+  }
+
+  .our-services .services {
+    grid-template-columns: 1fr;
+  }
+
+  .our-services .container div {
+    max-width: 90%;
+  }
+}

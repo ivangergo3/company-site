@@ -14,10 +14,20 @@
   left: 75%;
 }
 
-.page-body h1 {
+.page-body h1,
+.page-body div {
   color: var(--color-white);
 }
 
-.page-body div {
-  color: var(--color-white);
+@media only screen and (max-width: 1000px) {
+  .page-body-text {
+    top: 15%;
+    left: 5%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-body h1 {
+    margin-bottom: 0;
+  }
 }
