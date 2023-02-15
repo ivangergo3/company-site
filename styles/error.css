@@ -1,5 +1,6 @@
 body {
   background-color: var(--color-light-orange);
+  height: 100%;
 }
 
 .root {
@@ -40,4 +41,21 @@ body {
 
 .root button:active {
   background-color: var(--color-white);
+}
+
+@media only screen and (max-width: 1000px) {
+  .root {
+    font-size: var(--menu-text-size);
+    height: 100%;
+    width: 100%;
+  }
+
+  .root img {
+    width: 40%;
+    height: auto;
+  }
+
+  .root button {
+    font-size: var(--menu-text-size);
+  }
 }
