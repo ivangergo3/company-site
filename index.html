@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="./styles/about-us.css" />
     <link rel="stylesheet" href="./styles/contact-us.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <meta
+      name="description"
+      content="IG Consulting Services provides IT consulting and comprehensive tech solutions. We create, maintain, and improve your website according to your needs."
+    />
+    <meta name="keywords" content="IT, Consulting, Website creation, Website maintenance" />
+    <meta name="author" content="IG Consulting Services Kft" />
   </head>
   <body>
     <input type="checkbox" id="checkbox" />
@@ -30,7 +36,7 @@
           <a href="#top">
             <img
               src="./icons/ig-consulting-services-low-resolution-logo-color-on-transparent-background.png"
-              alt="Company logo"
+              alt="IG Consulting Services logo"
             />
           </a>
           <div>IG Consulting Services</div>
@@ -42,10 +48,10 @@
                 <a href="#services">Services</a>
               </li>
               <li>
-                <a href="#about_us">About</a>
+                <a href="#about-us">About</a>
               </li>
               <li>
-                <a href="#contact_us">Contact Us</a>
+                <a href="#contact-us">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -57,8 +63,8 @@
                 <span class="material-icons"> close </span>
               </a>
               <li><a href="#services">Services</a></li>
-              <li><a href="#about_us">About</a></li>
-              <li><a href="#contact_us">Contact Us</a></li>
+              <li><a href="#about-us">About</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
             </ul>
             <a class="hamburger" href="#menu">
               <span class="material-icons"> menu </span>
@@ -94,7 +100,7 @@
           </div>
         </div>
       </div>
-      <div class="about-us" id="about_us">
+      <div class="about-us" id="about-us">
         <div>
           <h3>About Us</h3>
           We are a small starting company with experience in many field of development. Frontend,
@@ -102,7 +108,7 @@
           us and we are certain we can find the solution
         </div>
       </div>
-      <div class="contact-us" id="contact_us">
+      <div class="contact-us" id="contact-us">
         <div class="contact-us-text">
           <h3>Contact Us</h3>
           <div>
@@ -116,7 +122,8 @@
             method="POST"
           >
             <input type="hidden" name="repository" value="company-site" />
-            <input type="email" name="email" placeholder="Your email address" />
+            <label for="email">Your email address:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required />
             <textarea name="message" rows="5" cols="80" placeholder="Your message"></textarea>
             <button type="submit">Send</button>
           </form>
@@ -127,7 +134,7 @@
           <a href="#top">
             <img
               src="./icons/ig-consulting-services-low-resolution-logo-color-on-transparent-background.png"
-              alt="Company logo"
+              alt="IG Consulting Services logo"
             />
           </a>
         </div>
